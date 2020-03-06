@@ -1,0 +1,35 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 7vh;
+    background-color: black;
+    color: white;
+    
+  }
+
+nav a{
+  text-decoration: none;
+  color: white;
+}
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 80%;
+  }
+
+.logout button{
+    border-color: #ae142a;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    
+    color: #fff;
+    background-color: #FFC107;
+    
+    height: 10px;
+    width: 100%;
+    
+    font-size: 16px;
+}
