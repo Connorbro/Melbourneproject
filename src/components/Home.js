@@ -9,6 +9,7 @@ import '../styles/Nav.css';
 import Homepage from './Homepage';
 import Tour from './Tour';
 import User from './User';
+// import Apidisplays from './Apidisplays'
 
 
 
@@ -16,22 +17,22 @@ import User from './User';
 
 class Home extends Component {
 
-        logout(){
-            fire.auth().signOut()
-        }
+    
+    logout(){
+        fire.auth().signOut()
+    }
 
+    
     render(){
         return(
             <div className="App">
-        
-        <button class="logout" onClick={this.logout}>Log Out</button> 
+                <button className="logout" onClick={this.logout}>Log Out</button> 
                 <Router>
                     <Navbar />
                     <Switch>
                     
 
-                        {/* <Route path="/Home" exact component={Home} exact/>  */}
-                        <Route path="/Homepage" component={Homepage} exact/>
+                        <Route path="/Homepage" component= {Homepage} exact/>
                         <Route path="/Whatshot" component={Whatshot}/> 
                         <Route path="/about" component={About}/>
                         <Route path="/tour" component={Tour}/>
@@ -39,20 +40,12 @@ class Home extends Component {
 
                     </Switch>
                 </Router>
-              
-        
                 
+              
 
-
-           
-            </div>
-    )}
-
+            </div>         
+        );
+    }
 }
 
-
-
-
 export default Home;
-
-    

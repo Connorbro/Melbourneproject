@@ -32,6 +32,8 @@ class App extends Component {
         return(
           <div>
             {this.state.user ? (<Home/>) : (<Login/>)}
+
+            
             </div>
         );
       }

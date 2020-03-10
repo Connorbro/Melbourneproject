@@ -1,7 +1,8 @@
+
+
 import React from 'react';
 import fire from '../config/fire';
 import '../../src/App.css';
-import mush from'../../src/mush.png';
 
 
 class Login extends React.Component {
@@ -35,9 +36,7 @@ class Login extends React.Component {
         .catch((err)=>{
             console.log("Error: " + err.toString())
         })
-
-
-
+     
     }
     render(){
         return(
@@ -46,7 +45,7 @@ class Login extends React.Component {
 
                 <h1>Melbourne adventures!</h1>
 
-                <div class="loginContainer">
+                <div className="loginContainer">
                     <div>
                         <div>
                             <h3>Email</h3>
@@ -64,8 +63,8 @@ class Login extends React.Component {
                             {/* <img class="imageToad" src={mush} ></img> */}
                         </div>
                     </div>
-                    <button class = "loginbutton" style={{margin:'10px'}} onClick={this.login}>Login</button>
-                    <button class = "signupbutton" style={{margin:'10px'}} onClick={this.signUp}>Sign Up</button>
+                    <button className = "loginbutton" style={{margin:'10px'}} onClick={this.login}>Login</button>
+                    <button className = "signupbutton" style={{margin:'10px'}} onClick={this.signUp}>Sgn Up</button>
                 </div>
             </div>
 

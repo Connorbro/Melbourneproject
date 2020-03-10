@@ -27,6 +27,9 @@ export default function Navbar() {
                     <li>User</li>
                 </Link>
             </ul>
+        
+        <div>
+        </div>
         </nav>
     );
 }
