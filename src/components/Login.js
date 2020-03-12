@@ -3,6 +3,9 @@
 import React from 'react';
 import fire from '../config/fire';
 import '../../src/App.css';
+import mush from './mush.png';
+
+
 
 
 class Login extends React.Component {
@@ -56,15 +59,16 @@ class Login extends React.Component {
                         <div>
                             <h3>Password</h3>
                         </div>
-                        <input id="password" placeholder="Enter Password..." type="text"/>
+                        <input id="password" placeholder="Enter Password..." type="password"/>
 
                         <div>
                             <h3>Your avatar</h3>
-                            {/* <img class="imageToad" src={mush} ></img> */}
+                            <img className="imageToad" src={mush} alt="" ></img> 
                         </div>
                     </div>
                     <button className = "loginbutton" style={{margin:'10px'}} onClick={this.login}>Login</button>
-                    <button className = "signupbutton" style={{margin:'10px'}} onClick={this.signUp}>Sgn Up</button>
+                    <button className = "signupbutton" style={{margin:'10px'}} onClick={this.signUp}>Sign Up</button>
+                   
                 </div>
             </div>
 

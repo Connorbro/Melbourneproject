@@ -18,7 +18,7 @@ export default function Navbar() {
                     <li>About</li>
                 </Link>
                 <Link to="/Whatshot">
-                    <li>Whats hot</li>
+                    <li>Price filter</li>
                 </Link>
                 <Link to="/Tour">
                     <li>Tours</li>

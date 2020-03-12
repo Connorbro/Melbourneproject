@@ -9,6 +9,7 @@ import '../styles/Nav.css';
 import Homepage from './Homepage';
 import Tour from './Tour';
 import User from './User';
+import mush from './mush.png';
 // import Apidisplays from './Apidisplays'
 
 
@@ -27,6 +28,7 @@ class Home extends Component {
         return(
             <div className="App">
                 <button className="logout" onClick={this.logout}>Log Out</button> 
+                <img className="imageToads" src={mush} alt="" ></img>
                 <Router>
                     <Navbar />
                     <Switch>

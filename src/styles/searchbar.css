@@ -1,0 +1,18 @@
+input {
+    color:white;
+    text-align: center;
+    display: inline-block;
+    background-color: black;
+    
+}
+
+h2{
+    text-align: center;
+}
+
+.wholeinput{
+    text-align: center;
+    display: inline-block;
+    align-items: center;
+    align-content: center;
+}

@@ -6,103 +6,10 @@ ul{
 }
 
 
-
-/* .navButton1 {
-    border-color: #ae142a;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #fff;
-    background-color: #FFC107;
-    padding: 6px 12px !important;
+.imageToads{
+    width: 60px;
     height: 70px;
-    width: 150px;
+    border-bottom: none;
+    margin-right: 93.3%;
     
 }
-.navButton2 {
-    border-color: #ae142a;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #fff;
-    background-color: #FFC107;
-    padding: 6px 12px !important;
-    height: 70px;
-    width: 150px;
-    margin-top: 50px;
-}
-.navButton3 {
-    border-color: #ae142a;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #fff;
-    background-color: #FFC107;
-    padding: 6px 12px !important;
-    height: 70px;
-    width: 150px;
-    margin-top: 50px;
-}
-.navButton4 {
-    border-color: #ae142a;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #fff;
-    background-color: #FFC107;
-    padding: 6px 12px !important;
-    height: 70px;
-    width: 150px;
-    margin-top: 50px;
-}
-.navButton5 {
-    border-color: #ae142a;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #fff;
-    background-color: #FFC107;
-    padding: 6px 12px !important;
-    height: 70px;
-    width: 150px;
-    margin-top: 50px;
-}
-.navButton1:hover {
-    color: #FFF;
-    background-color: #337AB7 !important;
-    border-color: #2E6DA4 !important;
-}
-.navButton2:hover {
-    color: #FFF;
-    background-color: #337AB7 !important;
-    border-color: #2E6DA4 !important;
-}
-.navButton3:hover {
-    color: #FFF;
-    background-color: #337AB7 !important;
-    border-color: #2E6DA4 !important;
-}
-.navButton4:hover {
-    color: #FFF;
-    background-color: #337AB7 !important;
-    border-color: #2E6DA4 !important;
-}
-.navButton5:hover {
-    color: #FFF;
-    background-color: #337AB7 !important;
-    border-color: #2E6DA4 !important;
-}
-.btn-primary {
-    border-color: #ae142a;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #fff;
-}
-.navimage{
-    width: 120px;
-    height:120px;
-    margin-left: 15px;
-    border: 2px solid black;
-
-} */
