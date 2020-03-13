@@ -49,38 +49,25 @@ class Login extends React.Component {
     
     render(){
         return(
-
             <div style={{textAlign: 'center'}}> 
-
-                <h1>Melbourne adventures!</h1>
-
-                <div className="loginContainer">
+                <h1 className="title-h1">Melbourne adventures!</h1>
+                <div className="containerLogin">
                     <div>
-                        <div>
+                        <div className="containerLogin">
                             <h3>Email</h3>
-                        </div>
-                        <input id="emailAdress" placeholder="Enter Email Here..." type="text"/>
-                    </div>
-                    <div>
-                        <div>
+                            <input id="emailAdress" placeholder="Enter Email Here..." type="text"/>
                             <h3>Password</h3>
-                        </div>
-                        <input id="password" placeholder="Enter Password..." type="password"/>
-
-                        <div>
-                            <h3>Please select a username for your session</h3>
+                            <input id="password" placeholder="Enter Password..." type="password"/>
+                            <h3>Session Username</h3>
                             <input onChange={this.props.recordUser} id="username" placeholder=" Enter your name..." type="text"/>
-
-                            <img className="imageToad" src={mush} alt="" ></img> 
                         </div>
                     </div>
-                    <button className = "loginbutton" style={{margin:'10px'}} onClick={this.login}>Login</button>
-                    <button className = "signupbutton" style={{margin:'10px'}} onClick={this.signUp}>Sign Up</button>
-                   
+                    <div className="btn-container">
+                        <button className="loginbutton" style={{margin:'10px'}} onClick={this.login}>Login</button>
+                        <button className="signupbutton" style={{margin:'10px'}} onClick={this.signUp}>Sign Up</button>
+                    </div>
                 </div>
             </div>
-
-
         )
     }
 }

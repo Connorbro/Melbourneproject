@@ -27,20 +27,17 @@ class Home extends Component {
     render(){
         return(
             <div className="App">
-                <button className="logout" onClick={this.logout}>Log Out</button> 
-                <img className="imageToads" src={mush} alt="" ></img>
+                {/* <button className="logout" onClick={this.logout}>Log Out</button>  */}
+                {/* <img className="imageToads" src={mush} alt="" ></img> */}
                 <Router>
-                    <Navbar  />
+                    <Navbar logout={this.logout}  />
                     <Switch>
-                    
-
                         <Route path="/Homepage" component= {Homepage} exact/>
                         <Route path="/Whatshot" component={Whatshot}/> 
                         <Route path="/about" component={About}/>
                         <Route path="/tour" component={Tour}/>
                         <Route path="/User" component={()=> <User username2={this.props.username2}/> }
                         />
-
                     </Switch>
                 </Router>
                 

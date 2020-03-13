@@ -11,41 +11,25 @@ function Apidisplays(props) {
                     props.details.data.results && props.details.data.results.map( (obj, index) => {
                         return (
                             <div className="wholecard" key={index}>
-                            
-                            <div className="names">
-                                <h1>
-                                <br/>
-                                
-                                {obj.name}</h1>
-                            </div>
-                            
-                                <br/>
-                            <div className="price">
-                                <h2>Price: ${obj.price.amount}</h2>
-                            </div>
-
-                            <div className= "vendors">
-                                <h2>Vendored by {obj.vendor} </h2>
-                            </div>
-
-
-                            <div className="url">
-                                <br/>
-
-                                <a href={obj.vendor_tour_url}>Click here to book now!</a>
-                            </div>
-
-                            <div className="images">
-                                <br/>
-                                
-                                <img src={obj.images[0].source_url} alt=""/>
-                            </div>
-                                
+                                <div className="names">
+                                    <h1 className="title-h1">{obj.name}</h1>
+                                    <img className="apiimg" src={obj.images[0].source_url} alt=""/>
+                                </div>
+                                <div className="price">
+                                    <h2 className="padding-h1">${obj.price.amount}</h2>
+                                </div>
+                                <div className= "vendors">
+                                    <p>Vendored by {obj.vendor} </p>
+                                </div>
+                                <div className="url">
+                                    <br/>
+                                    <a className="loginbutton" href={obj.vendor_tour_url}>Book Now!</a>
+                                </div>
                             </div>
                         )
                     })
                 }
-                                </div>
+            </div>
                            
                
         );

@@ -4,12 +4,21 @@ ul{
    
 
 }
-
-
 .imageToads{
     width: 60px;
     height: 70px;
     border-bottom: none;
     margin-right: 93.3%;
-    
+}
+
+.title-h1 {
+    padding-top: 2rem;
+}
+
+.homepage-btn {
+    padding-top: 4rem;
+}
+
+.getTourButton {
+    padding-top: 4rem;
 }

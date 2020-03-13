@@ -38,8 +38,8 @@ class Homepage extends React.Component {
         console.log(this.state.data);
         return(
             <div>
-                <h1>Welcome to Melbourne locations</h1>
-                <form onSubmit={this.getTours}>
+                <h1 className="title-h1" >Welcome to Melbourne locations</h1>
+                <form className="homepage-btn" onSubmit={this.getTours}>
                     <button className="getTourButton">All tours now!</button>
                 </form>
 
