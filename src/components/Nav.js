@@ -8,9 +8,8 @@ export default function Navbar() {
         <nav>
            
             <ul>
-            <Link to="/Home" >
-                <li></li>
-            </Link>
+            
+            
             <Link to="/Homepage">
                     <li>Home page</li>
                 </Link>
@@ -20,9 +19,7 @@ export default function Navbar() {
                 <Link to="/Whatshot">
                     <li>Price filter</li>
                 </Link>
-                <Link to="/Tour">
-                    <li>Tours</li>
-                </Link>
+                
                 <Link to="/User">
                     <li>User</li>
                 </Link>

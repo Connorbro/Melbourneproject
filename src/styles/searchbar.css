@@ -1,13 +1,16 @@
 input {
-    color:white;
+    color:black;
     text-align: center;
     display: inline-block;
-    background-color: black;
     
 }
 
 h2{
     text-align: center;
+    color: white;
+}
+p{
+    color: white;
 }
 
 .wholeinput{
@@ -15,4 +18,28 @@ h2{
     display: inline-block;
     align-items: center;
     align-content: center;
+    padding-bottom: 10px;
+    
 }
+.wholeform{
+    text-align: center;
+    display: inline-block;
+    align-items: center;
+    align-content: center;
+}
+label{
+    color: white;
+}
+.wholecard{
+    margin-top: 40px;
+    
+    border: 1px solid white;
+    max-width: 80%;
+    text-align: center;
+    display: inline-block;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #0c2461;
+    padding-bottom: 10px;
+  
+  }

@@ -30,7 +30,7 @@ class Home extends Component {
                 <button className="logout" onClick={this.logout}>Log Out</button> 
                 <img className="imageToads" src={mush} alt="" ></img>
                 <Router>
-                    <Navbar />
+                    <Navbar  />
                     <Switch>
                     
 
@@ -38,7 +38,8 @@ class Home extends Component {
                         <Route path="/Whatshot" component={Whatshot}/> 
                         <Route path="/about" component={About}/>
                         <Route path="/tour" component={Tour}/>
-                        <Route path="/User" component={User}/>
+                        <Route path="/User" component={()=> <User username2={this.props.username2}/> }
+                        />
 
                     </Switch>
                 </Router>

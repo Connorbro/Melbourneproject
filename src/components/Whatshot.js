@@ -4,7 +4,8 @@ import Pricefilter from './Pricefilter';
 
 class Whatshot extends Component{
     state = {
-        data:[]
+        data:[],
+        select: ""
     }
 
 
@@ -45,20 +46,21 @@ class Whatshot extends Component{
    <h2> Price filter</h2> <br/>
     
   </label>
-   
+   <div className="wholeform">
   <label > Filter price
-               <select className="form-control" value={this.props.size} onChange={this.props.getTours}>
-                            <option value="ALL">ALL</option>
+               <select className="form-control" value={this.props.size} onChange={(e) => this.setState({ select: parseInt(e.target.value)})}>
+                            
                             <option value="40">$40 or less</option>
                             <option value="60">$60 or less</option>
                             <option value="80">$80 or less</option>
                             <option value="100">$100 or less</option>
                             <option value="120">$120 or less</option>
                             <option value="140">$140 or less</option>
+                            <option value="200">$200 or less</option>
                         </select>
                     </label>
                     <input type="submit" onClick={this.getTours} value="Check availibility"/> 
-
+    </div>
 </form>
     <Pricefilter details={this.state}/>
                 

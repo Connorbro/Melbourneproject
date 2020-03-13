@@ -4,6 +4,7 @@ import Home from './components/Home';
 import fire from './config/fire';
 import './App.css';
 
+
     
 class App extends Component {
 
@@ -28,15 +29,37 @@ class App extends Component {
           }
         })
       }
+
+      state={
+        username: ""
+      }
+
+
+      recordUserNameHandler = (e) => {
+
+        this.setState({
+            username: e.target.value
+        })
+    
+    }
+
+
+
       render(){
         return(
           <div>
-            {this.state.user ? (<Home/>) : (<Login/>)}
+            {this.state.user ? (<Home username2={this.state.username}/>) : (<Login recordUser={this.recordUserNameHandler }/>)}
 
             
             </div>
         );
       }
 }
+
+
+
+
+
+
 
 export default App;

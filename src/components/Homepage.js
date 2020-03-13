@@ -2,6 +2,8 @@ import React from 'react';
 import '../styles/afterlogin.css';
 import Apidisplays from './Apidisplays'
 
+// import 'semantic-ui-css/semantic.min.css'
+
 
 
 class Homepage extends React.Component {

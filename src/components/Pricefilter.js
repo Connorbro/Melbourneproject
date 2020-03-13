@@ -2,10 +2,22 @@ import React from 'react'
 
 
 function Pricefilter(props) {
+    console.log(props);
+    
+    let filteredPrices = "";
+
+    if( props.details.data.results ) {
+        filteredPrices = props.details.data.results.filter( (obj) => {
+            return props.details.select >= parseInt(obj.price.amount);
+        });
+        console.log(filteredPrices);
+    }
+
+    
     return(
         <div className="wholecard">
             {
-                props.details.data.results && props.details.data.results.map( (obj, index) => {
+                props.details.data.results && filteredPrices.map( (obj, index) => {
                     return (
                         <div key={index}>
                             <div className="names">

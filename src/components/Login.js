@@ -4,6 +4,7 @@ import React from 'react';
 import fire from '../config/fire';
 import '../../src/App.css';
 import mush from './mush.png';
+// import User from './User';
 
 
 
@@ -41,6 +42,11 @@ class Login extends React.Component {
         })
      
     }
+
+
+
+
+    
     render(){
         return(
 
@@ -62,7 +68,9 @@ class Login extends React.Component {
                         <input id="password" placeholder="Enter Password..." type="password"/>
 
                         <div>
-                            <h3>Your avatar</h3>
+                            <h3>Please select a username for your session</h3>
+                            <input onChange={this.props.recordUser} id="username" placeholder=" Enter your name..." type="text"/>
+
                             <img className="imageToad" src={mush} alt="" ></img> 
                         </div>
                     </div>

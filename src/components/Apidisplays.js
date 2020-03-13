@@ -6,11 +6,11 @@ function Apidisplays(props) {
         
         
         return(
-            <div className="wholecard">
+            <div>
                 {
                     props.details.data.results && props.details.data.results.map( (obj, index) => {
                         return (
-                            <div key={index}>
+                            <div className="wholecard" key={index}>
                             
                             <div className="names">
                                 <h1>
