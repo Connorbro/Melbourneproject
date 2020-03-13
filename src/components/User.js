@@ -11,7 +11,7 @@ export default function Navbar(props) {
     
     return(
         <div>
-            <h1>User page</h1>
+            <h1 className="title-h1">User page</h1>
 
             {/* <h2>Welcome back! {this.email} </h2> */}
             <div className= "imagetoaddiv">

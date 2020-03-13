@@ -3,13 +3,10 @@ import { Link } from 'react-router-dom';
 
 
 
-export default function Navbar() {
+export default function Navbar(props) {
     return(
         <nav>
-           
             <ul>
-            
-            
             <Link to="/Homepage">
                     <li>Home page</li>
                 </Link>
@@ -23,8 +20,8 @@ export default function Navbar() {
                 <Link to="/User">
                     <li>User</li>
                 </Link>
+                <button className="logout" onClick={props.logout}>Log Out</button>
             </ul>
-        
         <div>
         </div>
         </nav>
